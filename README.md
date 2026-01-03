@@ -35,10 +35,13 @@ This repository contains a collection of custom skills for Claude, designed to e
 ## Repository Structure
 
 ```
-claude-skills/
-└── skills/                 # Individual skill implementations
-    └── document-processing/
-        └──SKILL.md
+.claude/
+    └── skills/
+        └── document-processing/    # The folder name is the skill identifier
+            ├── SKILL.md            # Required: Instructions & Metadata
+            ├── references/         # Optional: Specific docs or templates
+            ├── scripts/            # Optional: Python/JS for processing
+            └── assets/             # Optional: Logos, fonts, etc.
 
 ```
 
